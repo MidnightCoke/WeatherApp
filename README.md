@@ -71,10 +71,10 @@ Once the app is installed and running, it will automatically detect your locatio
 Here are some screenshots of the Weather App in action:
 
 ### App Screen (Broken Clouds)
-![Home Screen](path/to/home-screen-image.png)
+![Home Screen](/broken_clouds.jpg)
 
 ### App Screen (Clear Sky)
-![Weather Details](path/to/weather-details-image.png)
+![Weather Details](/clear_sky.jpg)
 
 
 ## Contact
