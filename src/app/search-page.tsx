@@ -30,7 +30,7 @@ export default function SearchPage() {
       {isLoading && <ActivityIndicator size={"large"} color={"#F0F0F0"} />}
       {error && (
         <Text className="text-center text-red-500 text-lg mt-4">
-          {i18n.t("search.FetchError")}
+          {i18n.t("search.fetchError")}
         </Text>
       )}
 
