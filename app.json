@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "WeatherApp",
-    "slug": "WeatherApp",
+    "name": "Weather App",
+    "slug": "weather-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -11,12 +11,18 @@
     "ios": {
       "supportsTablet": true
     },
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#FFFFFF"
+    },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/adaptive_foreground.png",
+        "backgroundImage": "./assets/images/adaptive_background.png"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.midnightcokeapps.WeatherApp"
     },
     "web": {
       "bundler": "metro",
@@ -25,15 +31,7 @@
     },
     "plugins": [
       "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
+      "expo-localization"
     ],
     "experiments": {
       "typedRoutes": true

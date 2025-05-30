@@ -1,0 +1,28 @@
+{
+  "main": {
+    "weatherApp": "Weather App"
+  },
+  "search": {
+    "searchTitle": "Weather",
+    "searchPlaceholder": "Search city, region or country",
+    "noResults": "No results found",
+    "fetchError": "Error fetching data"
+  },
+  "weather": {
+    "today": "Today, {{date}}",
+    "humidity": "Humidity",
+    "windSpeed": "Wind Speed",
+    "feelsLike": "Feels like",
+    "sunrise": "Sunrise",
+    "sunset": "Sunset",
+    "unknown": "Unknown",
+    "errorMessage": "Hava durumu verileri alınırken hata oluştu. Lütfen internet bağlantınızı kontrol edin veya daha sonra tekrar deneyin."
+  },
+  "buttons": {
+    "searchLocation": "Search a location",
+    "useMyLocation": "Use My Location"
+  },
+  "other" : {
+    "or": "Or"
+  }
+}
