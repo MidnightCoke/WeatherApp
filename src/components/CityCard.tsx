@@ -15,6 +15,7 @@ type CityCardProps = {
   weather?: any;
   isLoading?: boolean;
   error?: boolean;
+  testID?: string;
 };
 
 const CityCard = ({
@@ -23,6 +24,7 @@ const CityCard = ({
   isLoading,
   error,
   index,
+  testID = "search-result-item",
 }: CityCardProps) => {
   const { name, state, country } = item;
 
@@ -50,6 +52,7 @@ const CityCard = ({
       <TouchableOpacity
         onPress={handlePress}
         className="flex flex-row h-32 p-3 my-2 justify-between bg-gray-200 rounded-3xl"
+        testID={testID}
       >
         <View className="flex flex-1 flex-col justify-between ">
           <View className="flex flex-col">

@@ -24,6 +24,7 @@ export default function SearchPage() {
         placeholder={i18n.t("search.searchPlaceholder")}
         onChangeText={setInput}
         value={input}
+        testID="search-location-field"
       />
 
       {isLoading && <ActivityIndicator size={"large"} color={"#F0F0F0"} />}

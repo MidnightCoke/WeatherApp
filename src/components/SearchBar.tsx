@@ -6,12 +6,14 @@ type SearchBarProps = {
   placeholder?: string;
   onChangeText: (text: string) => void;
   value: string;
+  testID?: string;
 };
 
 const SearchBar = ({
   placeholder = "Search your location",
   onChangeText,
   value,
+  testID = "search-bar",
 }: SearchBarProps) => {
   return (
     <View className="flex-row items-center bg-zinc-900 rounded-lg mb-5 px-4">
@@ -39,6 +41,7 @@ const SearchBar = ({
         placeholder={placeholder}
         placeholderTextColor="#6b7280"
         className="flex-1 text-white text-xl py-4"
+        testID={testID}
       />
     </View>
   );

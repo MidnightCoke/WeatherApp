@@ -43,6 +43,7 @@ export default function Index() {
         <CustomButton
           title={i18n.t("buttons.searchLocation")}
           handlePress={() => router.push("/search-page")}
+          testID="search-location-button"
         />
         <View className="flex justify-center items-center">
           <OrSeperator />
@@ -51,6 +52,7 @@ export default function Index() {
           title={i18n.t("buttons.useMyLocation")}
           handlePress={handleLocation}
           isLoading={loadingLocation}
+          testID="use-my-location-button"
         />
       </View>
     </SafeAreaView>
