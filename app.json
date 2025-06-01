@@ -22,7 +22,11 @@
         "backgroundImage": "./assets/images/adaptive_background.png"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.midnightcokeapps.WeatherApp"
+      "package": "com.midnightcokeapps.WeatherApp",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
     },
     "web": {
       "bundler": "metro",

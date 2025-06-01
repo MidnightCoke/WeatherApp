@@ -1,8 +1,9 @@
-import Clear from "@/assets/images/Clear.jpeg";
-import Clouds from "@/assets/images/Clouds.jpeg";
-import Mist from "@/assets/images/Mist.jpg";
-import Rain from "@/assets/images/Rain.jpeg";
-import Snow from "@/assets/images/Snow.jpeg";
+import Clear from "@/assets/images/Clear.png";
+import Clouds from "@/assets/images/Clouds.png";
+import Mist from "@/assets/images/Mist.png";
+import Rain from "@/assets/images/Rain.png";
+import Snow from "@/assets/images/Snow.png";
+import Thunderstorm from "@/assets/images/Thunderstorm.png";
 
 const bgImage = {
   Clouds,
@@ -10,6 +11,7 @@ const bgImage = {
   Mist,
   Rain,
   Snow,
+  Thunderstorm,
 };
 
 const defaultBgImage = Clouds;
