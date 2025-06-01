@@ -1,0 +1,45 @@
+name: Android APK Build
+
+on:
+  push:
+    branches: [test] # veya istediğin branch
+  workflow_dispatch: # elle tetikleme opsiyonu
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Set up Java (Android için gerekli)
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: 17
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Run Expo Prebuild
+        run: npx expo prebuild
+
+      - name: Build APK
+        run: |
+          cd android
+          ./gradlew assembleRelease
+
+      - name: Upload APK as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: weatherapp-apk
+          path: android/app/build/outputs/apk/release/app-release.apk
