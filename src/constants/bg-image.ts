@@ -1,8 +1,8 @@
-import Clear from "@/assets/Images/Clear.jpeg";
-import Clouds from "@/assets/Images/Clouds.jpeg";
-import Mist from "@/assets/Images/Mist.jpg";
-import Rain from "@/assets/Images/Rain.jpeg";
-import Snow from "@/assets/Images/Snow.jpeg";
+import Clear from "@/assets/images/Clear.jpeg";
+import Clouds from "@/assets/images/Clouds.jpeg";
+import Mist from "@/assets/images/Mist.jpg";
+import Rain from "@/assets/images/Rain.jpeg";
+import Snow from "@/assets/images/Snow.jpeg";
 
 const bgImage = {
   Clouds,
