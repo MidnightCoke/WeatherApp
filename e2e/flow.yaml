@@ -1,0 +1,31 @@
+appId: com.midnightcokeapps.WeatherApp
+---
+- launchApp
+- tapOn: 
+    id: "search-location-button"
+    retryTapIfNoChange: false
+
+- tapOn:
+    id: "search-location-field"
+    retryTapIfNoChange: false
+
+- inputText: "New York"
+
+- assertVisible: "New York"
+
+- tapOn:
+    id: "search-result-item"
+    repeat: 2 # to dismiss the keyboard
+    index: 0 
+
+- pressKey: Back
+
+- pressKey: Back
+
+- tapOn: 
+    id: "use-my-location-button"
+    retryTapIfNoChange: false
+
+- waitForAnimationToEnd:
+    timeout: 5000
+

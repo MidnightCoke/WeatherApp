@@ -1,0 +1,28 @@
+{
+  "main": {
+    "weatherApp": "Hava Durumu Uygulaması"
+  },
+  "search": {
+    "searchTitle": "Hava Durumu",
+    "searchPlaceholder": "Şehir, bölge veya ülke ara",
+    "noResults": "Sonuç bulunamadı",
+    "fetchError": "Veri alınırken hata oluştu"
+  },
+  "weather": {
+    "today": "Bugün, {{date}}",
+    "humidity": "Nem",
+    "windSpeed": "Rüzgar Hızı",
+    "feelsLike": "Hissedilen",
+    "sunrise": "Gündoğumu",
+    "sunset": "Günbatımı",
+    "unknown": "Bilinmiyor",
+    "errorMessage": "Hava durumu verileri alınırken hata oluştu. Lütfen internet bağlantınızı kontrol edin veya daha sonra tekrar deneyin."
+  },
+  "buttons": {
+    "searchLocation": "Bir konum ara",
+    "useMyLocation": "Konumumu Kullan"
+  },
+  "other" : {
+    "or": "Veya"
+  }
+}
